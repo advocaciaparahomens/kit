@@ -1,0 +1,214 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1c1c1c;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #f1c40f;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #ccc;
+  font-size: 1.2em;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Seção de benefícios */
+#beneficios h2 {
+  color: #f1c40f;
+  margin-bottom: 16px;
+}
+
+.bullets {
+  list-style: none;
+  padding: 0;
+}
+
+.bullets li {
+  margin-bottom: 12px;
+  font-size: 1em;
+  padding-left: 24px;
+  position: relative;
+}
+
+.bullets li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #f1c40f;
+}
+
+/* Botões de Download */
+.download-links {
+  margin-top: 20px;
+}
+
+.btn-download {
+  background-color: #f1c40f;
+  color: #121212;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.btn-download:hover {
+  background-color: #d4ac0d;
+}
+
+.subtexto {
+  font-size: 0.9em;
+  color: #ccc;
+  margin-bottom: 16px;
+  margin-top: -8px;
+}
+
+/* Formulário de Contato */
+#contato h2 {
+  color: #f1c40f;
+  margin-bottom: 16px;
+}
+
+.form-contato {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1em;
+  color: #f5f5f5;
+}
+
+.form-contato input::placeholder,
+.form-contato textarea::placeholder {
+  color: #999;
+}
+
+.btn-form {
+  background-color: #f1c40f;
+  color: #121212;
+  padding: 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.btn-form:hover {
+  background-color: #d4ac0d;
+}
+
+/* Botão WhatsApp */
+#whatsapp h2 {
+  color: #f1c40f;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.whatsapp a.btn-wpp {
+  background-color: #25D366;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.whatsapp a.btn-wpp:hover {
+  background-color: #1ebe57;
+}
+
+/* Seção Credibilidade */
+#credibilidade {
+  margin-top: 60px;
+  text-align: center;
+}
+
+#credibilidade h2 {
+  color: #f1c40f;
+  margin-bottom: 16px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.logos img {
+  max-width: 120px;
+  filter: brightness(0) invert(1);
+}
+
+.depoimento {
+  font-style: italic;
+  color: #ccc;
+}
+
+/* Rodapé */
+footer {
+  background-color: #1c1c1c;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #999;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+  .container {
+    padding: 20px;
+  }
+  .btn-download {
+    width: 100%;
+    text-align: center;
+  }
+  .form-contato input,
+  .form-contato textarea {
+    font-size: 0.9em;
+  }
+  .btn-form {
+    width: 100%;
+  }
+  .whatsapp a.btn-wpp {
+    width: 100%;
+  }
+  .logos {
+    gap: 16px;
+  }
+}
