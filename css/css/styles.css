@@ -1,215 +1,288 @@
 
-/* Base */
-body {
+/* ====== RESET E BASE ====== */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
   font-family: 'Inter', sans-serif;
   background-color: #121212;
-  color: #f5f5f5;
+  color: #ECECEA;
   line-height: 1.6;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
 
+/* ====== CABEÇALHO ====== */
 header {
-  background-color: #1c1c1c;
-  padding: 40px 20px;
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('img/hero.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
 header h1 {
-  color: #f1c40f;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  color: #F1C40F;
+  margin-bottom: 0.5rem;
 }
-
 header p {
-  color: #ccc;
-  font-size: 1.2em;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  color: #DDD;
+}
+header .btn-cta {
+  background-color: #F1C40F;
+  color: #121212;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+header .btn-cta:hover {
+  background-color: #D4AC0D;
 }
 
+/* ====== CONTAINER ====== */
 .container {
   max-width: 960px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 2rem 1rem;
 }
 
-/* Seção de benefícios */
+/* ====== SEÇÃO BENEFÍCIOS ====== */
+#beneficios {
+  margin-top: 3rem;
+}
 #beneficios h2 {
-  color: #f1c40f;
-  margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #F1C40F;
+  margin-bottom: 1rem;
+  text-align: center;
 }
-
 .bullets {
   list-style: none;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
 }
-
 .bullets li {
-  margin-bottom: 12px;
-  font-size: 1em;
-  padding-left: 24px;
+  background-color: #1E1E1E;
+  padding: 1rem;
+  border-radius: 8px;
   position: relative;
+  padding-left: 2.5rem;
+  font-size: 1rem;
+  color: #DDD;
 }
-
 .bullets li::before {
-  content: '•';
+  content: '✔';
   position: absolute;
-  left: 0;
-  color: #f1c40f;
+  left: 1rem;
+  top: 1rem;
+  color: #F1C40F;
+  font-size: 1.2rem;
 }
 
-/* Botões de Download */
+/* ====== SEÇÃO DOWNLOADS ====== */
+#downloads {
+  margin-top: 4rem;
+}
+#downloads h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #F1C40F;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 .download-links {
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
-
-.btn-download {
-  background-color: #f1c40f;
-  color: #121212;
-  padding: 12px 24px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
+.download-block {
+  background-color: #1E1E1E;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.download-block:hover {
+  transform: translateY(-5px);
+}
+.download-block a.btn-download {
   display: inline-block;
-  margin-bottom: 8px;
+  background-color: #F1C40F;
+  color: #121212;
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  transition: background-color 0.3s ease;
+}
+.download-block a.btn-download:hover {
+  background-color: #D4AC0D;
+}
+.download-block p.subtexto {
+  font-size: 0.9rem;
+  color: #CCC;
 }
 
-.btn-download:hover {
-  background-color: #d4ac0d;
+/* ====== SEÇÃO CONTATO ====== */
+#contato {
+  margin-top: 4rem;
 }
-
-.subtexto {
-  font-size: 0.9em;
-  color: #ccc;
-  margin-bottom: 16px;
-  margin-top: -8px;
-}
-
-/* Formulário de Contato */
 #contato h2 {
-  color: #f1c40f;
-  margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #F1C40F;
+  margin-bottom: 1rem;
+  text-align: center;
 }
-
 .form-contato {
-  background-color: #1e1e1e;
-  padding: 20px;
-  border-radius: 10px;
+  background-color: #1E1E1E;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
 }
-
 .form-contato input,
 .form-contato textarea {
   width: 100%;
-  background-color: #2a2a2a;
+  background-color: #2A2A2A;
   border: none;
   border-radius: 6px;
-  padding: 12px;
-  font-size: 1em;
-  color: #f5f5f5;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #ECECEA;
 }
-
 .form-contato input::placeholder,
 .form-contato textarea::placeholder {
   color: #999;
 }
-
-.btn-form {
-  background-color: #f1c40f;
+.form-contato button.btn-form {
+  width: 100%;
+  background-color: #F1C40F;
   color: #121212;
-  padding: 12px;
-  font-size: 1em;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
   border: none;
   border-radius: 6px;
-  font-weight: bold;
   cursor: pointer;
-  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+.form-contato button.btn-form:hover {
+  background-color: #D4AC0D;
 }
 
-.btn-form:hover {
-  background-color: #d4ac0d;
+/* ====== SEÇÃO WHATSAPP ====== */
+#whatsapp {
+  margin-top: 4rem;
+  text-align: center;
 }
-
-/* Botão WhatsApp */
 #whatsapp h2 {
-  color: #f1c40f;
-  margin-bottom: 16px;
-  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #F1C40F;
+  margin-bottom: 1rem;
 }
-
 .whatsapp a.btn-wpp {
-  background-color: #25D366;
-  color: white;
-  padding: 15px 30px;
-  font-size: 1.2em;
-  border-radius: 8px;
-  text-decoration: none;
   display: inline-block;
+  background-color: #25D366;
+  color: #FFF;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
-
 .whatsapp a.btn-wpp:hover {
-  background-color: #1ebe57;
+  background-color: #1ABA57;
 }
 
-/* Seção Credibilidade */
+/* ====== SEÇÃO CREDIBILIDADE ====== */
 #credibilidade {
-  margin-top: 60px;
+  margin-top: 4rem;
   text-align: center;
 }
-
 #credibilidade h2 {
-  color: #f1c40f;
-  margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #F1C40F;
+  margin-bottom: 1rem;
 }
-
 .logos {
   display: flex;
   justify-content: center;
-  gap: 24px;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  gap: 2rem;
+  margin-bottom: 1rem;
 }
-
 .logos img {
   max-width: 120px;
   filter: brightness(0) invert(1);
 }
-
 .depoimento {
   font-style: italic;
-  color: #ccc;
+  color: #CCC;
+  max-width: 700px;
+  margin: auto;
 }
 
-/* Rodapé */
+/* ====== RODAPÉ ====== */
 footer {
-  background-color: #1c1c1c;
-  padding: 20px;
+  background-color: #1C1C1C;
   text-align: center;
-  font-size: 0.9em;
-  color: #999;
+  padding: 1rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #777;
 }
 
-/* RESPONSIVIDADE */
+/* ====== RESPONSIVIDADE ====== */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 2em;
+    font-size: 2.2rem;
   }
-  .container {
-    padding: 20px;
+  header p {
+    font-size: 1rem;
+    padding: 0 1rem;
   }
+  .bullets {
+    grid-template-columns: 1fr;
+  }
+  .download-links {
+    grid-template-columns: 1fr;
+  }
+  #contato .form-contato {
+    padding: 1rem;
+  }
+  #whatsapp a.btn-wpp,
+  .form-contato button.btn-form,
   .btn-download {
     width: 100%;
-    text-align: center;
-  }
-  .form-contato input,
-  .form-contato textarea {
-    font-size: 0.9em;
-  }
-  .btn-form {
-    width: 100%;
-  }
-  .whatsapp a.btn-wpp {
-    width: 100%;
-  }
-  .logos {
-    gap: 16px;
   }
 }
