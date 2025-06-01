@@ -8,370 +8,79 @@
   <meta property="og:title" content="Kit de Defesa para Homens Acusados Injustamente" />
   <meta property="og:description" content="Proteja seus direitos com orientações e modelos jurídicos gratuitos." />
   <meta property="og:image" content="img/og-image.png" />
-  <meta property="og:url" content="https://SEU_USUARIO.github.io/kit/" />
-  <title>Kit de Defesa para Homens | Advocacia</title>
-  <!-- Fonte do Google Fonts -->
+  <meta property="og:url" content="https://advocaciaparahomens.github.io/kit/" />
+  <title>Kit de Defesa para Homens | Diego Sanches, OAB/SP 326.175</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
-  <style>
-    /* ====== RESET E BASE ====== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #121212;
-      color: #ECECEA;
-      line-height: 1.6;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    /* ====== CABEÇALHO COM IMAGEM HERÓI ====== */
-    header {
-      position: relative;
-      height: 60vh;
-      min-height: 400px;
-      background: 
-        linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('img/hero.jpg') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #ECECEA;
-    }
-    header h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2.8rem;
-      color: #F1C40F;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin-bottom: 1.5rem;
-      color: #DDD;
-    }
-    header .btn-cta {
-      background-color: #F1C40F;
-      color: #121212;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      font-weight: 700;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-    }
-    header .btn-cta:hover {
-      background-color: #D4AC0D;
-    }
-
-    /* ====== CONTAINER PARA O RESTANTE ====== */
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-
-    /* ====== SEÇÃO “O QUE VOCÊ VAI ENCONTRAR” ====== */
-    #beneficios {
-      margin-top: 3rem;
-    }
-    #beneficios h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2rem;
-      color: #F1C40F;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    .bullets {
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1rem;
-    }
-    .bullets li {
-      background-color: #1E1E1E;
-      padding: 1rem;
-      border-radius: 8px;
-      position: relative;
-      padding-left: 2.5rem;
-      font-size: 1rem;
-      color: #DDD;
-    }
-    .bullets li::before {
-      content: '✔';
-      position: absolute;
-      left: 1rem;
-      top: 1rem;
-      color: #F1C40F;
-      font-size: 1.2rem;
-    }
-
-    /* ====== SEÇÃO “BAIXE OS MATERIAIS” ====== */
-    #downloads {
-      margin-top: 4rem;
-    }
-    #downloads h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2rem;
-      color: #F1C40F;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    .download-links {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-    /* Cada download em bloco */
-    .download-block {
-      background-color: #1E1E1E;
-      border-radius: 8px;
-      padding: 1.5rem;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-    .download-block:hover {
-      transform: translateY(-5px);
-    }
-    .download-block a.btn-download {
-      display: inline-block;
-      background-color: #F1C40F;
-      color: #121212;
-      padding: 0.75rem 1.5rem;
-      font-weight: 700;
-      border-radius: 6px;
-      margin-bottom: 0.75rem;
-      transition: background-color 0.3s ease;
-    }
-    .download-block a.btn-download:hover {
-      background-color: #D4AC0D;
-    }
-    .download-block p.subtexto {
-      font-size: 0.9rem;
-      color: #CCC;
-    }
-
-    /* ====== SEÇÃO “SOLICITE ATENDIMENTO” ====== */
-    #contato {
-      margin-top: 4rem;
-    }
-    #contato h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2rem;
-      color: #F1C40F;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    .form-contato {
-      background-color: #1E1E1E;
-      padding: 1.5rem;
-      border-radius: 8px;
-      max-width: 600px;
-      margin: auto;
-    }
-    .form-contato input,
-    .form-contato textarea {
-      width: 100%;
-      background-color: #2A2A2A;
-      border: none;
-      border-radius: 6px;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      font-size: 1rem;
-      color: #ECECEA;
-    }
-    .form-contato input::placeholder,
-    .form-contato textarea::placeholder {
-      color: #999;
-    }
-    .form-contato button.btn-form {
-      width: 100%;
-      background-color: #F1C40F;
-      color: #121212;
-      padding: 0.75rem;
-      font-size: 1rem;
-      font-weight: 700;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .form-contato button.btn-form:hover {
-      background-color: #D4AC0D;
-    }
-
-    /* ====== SEÇÃO “ATENDIMENTO IMEDIATO” ====== */
-    #whatsapp {
-      margin-top: 4rem;
-      text-align: center;
-    }
-    #whatsapp h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2rem;
-      color: #F1C40F;
-      margin-bottom: 1rem;
-    }
-    .whatsapp a.btn-wpp {
-      display: inline-block;
-      background-color: #25D366;
-      color: #FFF;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      font-weight: 700;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-    }
-    .whatsapp a.btn-wpp:hover {
-      background-color: #1ABA57;
-    }
-
-    /* ====== SEÇÃO “CREDIBILIDADE” ====== */
-    #credibilidade {
-      margin-top: 4rem;
-      text-align: center;
-    }
-    #credibilidade h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2rem;
-      color: #F1C40F;
-      margin-bottom: 1rem;
-    }
-    .logos {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-bottom: 1rem;
-    }
-    .logos img {
-      max-width: 120px;
-      filter: brightness(0) invert(1);
-    }
-    .depoimento {
-      font-style: italic;
-      color: #CCC;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    /* ====== RODAPÉ ====== */
-    footer {
-      background-color: #1C1C1C;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-    /* ====== RESPONSIVIDADE ====== */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      header p {
-        font-size: 1rem;
-        padding: 0 1rem;
-      }
-      .bullets {
-        grid-template-columns: 1fr;
-      }
-      .download-links {
-        grid-template-columns: 1fr;
-      }
-      #contato .form-contato {
-        padding: 1rem;
-      }
-      #whatsapp a.btn-wpp,
-      .form-contato button.btn-form,
-      .btn-download {
-        width: 100%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- ====== CABEÇALHO ====== -->
+  <!-- ====== CABEÇALHO COM IMAGEM HERO ====== -->
   <header>
-    <h1>Kit de Defesa para Homens Acusados Injustamente</h1>
-    <p>Proteja sua liberdade e seu vínculo com seus filhos com orientações especializadas</p>
-    <a href="#downloads" class="btn-cta">Baixar Kit Agora</a>
+    <h1>Kit de Defesa para Homens Acusados Injustamente</h1> <!-- :contentReference[oaicite:21]{index=21} -->
+    <p>Proteja sua liberdade e seu vínculo com seus filhos com estratégias jurídicas exclusivas</p> <!-- :contentReference[oaicite:22]{index=22} -->
+    <a href="#downloads" class="btn-cta">Baixar Kit Agora</a> <!-- :contentReference[oaicite:23]{index=23} -->
   </header>
 
   <main class="container">
     <!-- ====== SEÇÃO: O QUE VOCÊ VAI ENCONTRAR ====== -->
     <section id="beneficios">
-      <h2>O Que Você Vai Encontrar Neste Kit</h2>
+      <h2>O Que Você Vai Encontrar Neste Kit</h2> <!-- :contentReference[oaicite:24]{index=24} -->
       <ul class="bullets">
-        <li>📜 Explicações objetivas sobre a Lei Maria da Penha e abusos</li>
-        <li>⚠️ O que fazer ao receber intimação ou medida protetiva</li>
-        <li>🗂️ Dicas de conduta e organização de provas para sua defesa</li>
-        <li>✒️ Modelos jurídicos utilizados por advogados especializados</li>
-        <li>🧒 Orientações sobre guarda, convivência e alienação parental</li>
-        <li>📲 Canal direto para atendimento jurídico especializado</li>
+        <li>📜 Explicações objetivas sobre a Lei Maria da Penha e abusos</li> <!-- :contentReference[oaicite:25]{index=25} -->
+        <li>⚠️ O que fazer ao receber intimação ou medida protetiva</li> <!-- :contentReference[oaicite:26]{index=26} -->
+        <li>🗂️ Dicas de conduta e organização de provas para sua defesa</li> <!-- :contentReference[oaicite:27]{index=27} -->
+        <li>✒️ Modelos jurídicos utilizados por advogados especializados</li> <!-- :contentReference[oaicite:28]{index=28} -->
+        <li>🧒 Orientações sobre guarda, convivência e alienação parental</li> <!-- :contentReference[oaicite:29]{index=29} -->
+        <li>📲 Canal direto para atendimento jurídico especializado</li> <!-- :contentReference[oaicite:30]{index=30} -->
       </ul>
     </section>
 
     <!-- ====== SEÇÃO: BAIXE OS MATERIAIS ====== -->
     <section id="downloads">
-      <h2>📥 Baixe os Materiais</h2>
+      <h2>📥 Baixe os Materiais</h2> <!-- :contentReference[oaicite:31]{index=31} -->
       <div class="download-links">
         <div class="download-block">
           <a class="btn-download" href="docs/Kit_Atualizado_Completo_Defesa_Homens.docx" target="_blank">
             📄 Kit Completo (.docx)
           </a>
-          <p class="subtexto">Inclui explicações, modelos e exemplos práticos.</p>
+          <p class="subtexto">Inclui explicações, modelos e exemplos práticos para sua defesa.</p> <!-- :contentReference[oaicite:32]{index=32} -->
         </div>
 
         <div class="download-block">
           <a class="btn-download" href="docs/Kit_Revisado_Homens_Acusados_Injustamente.pdf" target="_blank">
             📘 Versão em PDF
           </a>
-          <p class="subtexto">Versão para visualização rápida e impressão.</p>
+          <p class="subtexto">Visualize rapidamente e imprima quando precisar.</p> <!-- :contentReference[oaicite:33]{index=33} -->
         </div>
 
         <div class="download-block">
           <a class="btn-download" href="img/cards.png" target="_blank" download>
             🖼️ Cards Visuais
           </a>
-          <p class="subtexto">Artes para compartilhar em redes sociais.</p>
+          <p class="subtexto">Adapte e compartilhe em suas redes sociais.</p> <!-- :contentReference[oaicite:34]{index=34} -->
         </div>
       </div>
     </section>
 
     <!-- ====== SEÇÃO: SOLICITE ATENDIMENTO ====== -->
     <section id="contato">
-      <h2>📨 Solicite Atendimento</h2>
-      <p>Preencha o formulário abaixo e receba o kit completo com análise gratuita do seu caso:</p>
+      <h2>📨 Solicite Atendimento</h2> <!-- :contentReference[oaicite:35]{index=35} -->
+      <p>Preencha o formulário para receber o kit completo e agendar sua avaliação gratuita:</p> <!-- :contentReference[oaicite:36]{index=36} -->
       <form action="mailto:diego@diegosanches.adv.br" method="POST" enctype="text/plain" class="form-contato">
-        <input type="text" name="Nome" placeholder="Seu nome" required />
-        <input type="email" name="Email" placeholder="Seu e-mail" required />
-        <input type="tel" name="WhatsApp" placeholder="Seu WhatsApp (com DDD)" required />
-        <textarea name="Mensagem" rows="4" placeholder="Descreva brevemente sua situação" required></textarea>
-        <button type="submit" class="btn-form">Enviar</button>
+        <input type="text" name="Nome" placeholder="Seu nome" required /> <!-- :contentReference[oaicite:37]{index=37} -->
+        <input type="email" name="Email" placeholder="Seu e-mail" required /> <!-- :contentReference[oaicite:38]{index=38} -->
+        <input type="tel" name="WhatsApp" placeholder="Seu WhatsApp (com DDD)" required /> <!-- :contentReference[oaicite:39]{index=39} -->
+        <textarea name="Mensagem" rows="4" placeholder="Descreva brevemente sua situação" required></textarea> <!-- :contentReference[oaicite:40]{index=40} -->
+        <button type="submit" class="btn-form">Enviar</button> <!-- :contentReference[oaicite:41]{index=41} -->
       </form>
     </section>
 
     <!-- ====== SEÇÃO: ATENDIMENTO IMEDIATO ====== -->
     <section id="whatsapp">
-      <h2>📲 Atendimento Imediato</h2>
-      <p>Prefere falar diretamente? Clique abaixo:</p>
+      <h2>📲 Atendimento Imediato</h2> <!-- :contentReference[oaicite:42]{index=42} -->
+      <p>Prefere falar diretamente? Clique no botão abaixo:</p> <!-- :contentReference[oaicite:43]{index=43} -->
       <div class="whatsapp">
-        <a class="btn-wpp" href="https://api.whatsapp.com/send?phone=5511930510507&text=Olá,%20preciso%20de%20ajuda%20com%20minha%20defesa." target="_blank">
+        <a class="btn-wpp" href="https://api.whatsapp.com/send?phone=5511930510507&text=Olá,%20sou%20Diego%20Sanches%20(OAB/SP%20326.175),%20preciso%20de%20ajuda%20com%20meu%20caso." target="_blank">
           💬 Falar no WhatsApp
         </a>
       </div>
@@ -379,18 +88,17 @@
 
     <!-- ====== SEÇÃO: CREDIBILIDADE ====== -->
     <section id="credibilidade">
-      <h2>📜 Credibilidade</h2>
+      <h2>📜 Credibilidade</h2> <!-- :contentReference[oaicite:44]{index=44} -->
       <div class="logos">
-        <img src="img/logo-oab.png" alt="Logo da OAB/UF" />
-        <!-- Se houver outros selos, adicionar mais <img> -->
+        <img src="img/logo-oab.png" alt="OAB/SP 326.175" /> <!-- :contentReference[oaicite:45]{index=45} -->
       </div>
-      <p class="depoimento">“Graças a este kit, consegui reunir provas, fiz a defesa e recuperei a guarda do meu filho.” – João S.</p>
+      <p class="depoimento">“Graças a este kit, reuni as provas necessárias e recuperei a guarda dos meus filhos. Recomendo o Dr. Diego Sanches.” – João S.</p> <!-- :contentReference[oaicite:46]{index=46} -->
     </section>
   </main>
 
   <!-- ====== RODAPÉ ====== -->
   <footer>
-    <p>&copy; 2025 Defesa Estratégica para Homens — Todos os direitos reservados</p>
+    <p>&copy; 2025 Diego Sanches Advocacia – OAB/SP 326.175 – diego@diegosanches.adv.br</p> <!-- :contentReference[oaicite:47]{index=47} -->
   </footer>
 </body>
 </html>
