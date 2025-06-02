@@ -49,9 +49,9 @@
       height: 60vh;
       min-height: 400px;
       background:
-        /* Usar imagem de advogado em terno como plano de fundo */ 
+        /* Imagem de advogado em terno como plano de fundo */
         linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('img/hero-lawyer.jpg') center/cover no-repeat; /* :contentReference[oaicite:11]{index=11} */
+        url('img/hero-lawyer.jpg') center/cover no-repeat;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -60,7 +60,7 @@
       color: #ECECEA;
     }
     header h1 {
-      font-size: 2.8rem; /* Tamanho grande para impacto inicial */ 
+      font-size: 2.8rem;
       margin-bottom: 0.5rem;
     }
     header p {
@@ -69,7 +69,6 @@
       margin-bottom: 1.5rem;
       color: #DDD;
     }
-    /* Botão chama diretamente WhatsApp */
     header .btn-cta {
       background-color: #F1C40F;
       color: #121212;
@@ -166,6 +165,36 @@
       font-size: 0.9rem;
       color: #CCC;
       margin-top: 0.5rem;
+    }
+
+    /* ====== SEÇÃO “SUGESTÕES DE PUBLICIDADE” ====== */
+    #sugestoes {
+      margin-top: 4rem;
+    }
+    #sugestoes h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .sugestoes-list {
+      list-style: none;
+      padding-left: 1rem;
+      color: #DDD;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    .sugestoes-list li {
+      margin-bottom: 0.75rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+    .sugestoes-list li::before {
+      content: '▶';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #F1C40F;
+      font-size: 1rem;
     }
 
     /* ====== SEÇÃO “SOLICITE ATENDIMENTO” ====== */
@@ -290,6 +319,9 @@
       .download-links {
         grid-template-columns: 1fr;
       }
+      .sugestoes-list {
+        padding-left: 0.5rem;
+      }
       .form-contato {
         padding: 1rem;
       }
@@ -320,7 +352,6 @@
         <li>Como ler e entender sua medida protetiva — passos para não errar</li>
         <li>O que fazer assim que sair a intimação (sem perder prazo)</li>
         <li>Como juntar provas (áudios, mensagens, fotos) sem complicação</li>
-        <li>Modelos prontos de petição para você usar hoje mesmo</li>
         <li>Dicas para provar que seu filho precisa de você (guarda e convivência)</li>
         <li>Contato direto com Dr. Diego Sanches pelo WhatsApp</li>
       </ul>
@@ -345,7 +376,7 @@
       </div>
     </section>
 
-    <!-- ====== SEÇÃO: SUGESTÕES DE PUBLICIDADE (TEXTO SEQUENCIAL) ====== -->
+    <!-- ====== SEÇÃO: SUGESTÕES DE PUBLICIDADE ====== -->
     <section id="sugestoes">
       <h2>🔖 Sugestões de Publicidade</h2>
       <ul class="sugestoes-list">
@@ -407,3 +438,4 @@
   </footer>
 </body>
 </html>
+
