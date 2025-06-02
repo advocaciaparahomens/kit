@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kit de defesa gratuito para homens acusados injustamente: guia prático com passo a passo, modelos de petição e suporte direto pelo WhatsApp." />
+  <meta name="description" content="Kit de defesa gratuito para homens acusados injustamente: guia prático com passo a passo e suporte direto pelo WhatsApp." />
   <meta property="og:title" content="Recebeu uma Medida Protetiva Sem Provas?" />
   <meta property="og:description" content="Não fique afastado dos seus filhos. Baixe agora um guia prático com orientações do Dr. Diego Sanches, OAB/SP 326.175." />
   <meta property="og:image" content="img/og-image.png" />
@@ -100,13 +100,16 @@
     }
     .bullets {
       list-style: none;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       gap: 1rem;
     }
     .bullets li {
       background-color: #1E1E1E;
       padding: 1rem;
+      width: 100%;
+      max-width: 400px;
       border-radius: 8px;
       position: relative;
       padding-left: 2.5rem;
@@ -165,36 +168,6 @@
       font-size: 0.9rem;
       color: #CCC;
       margin-top: 0.5rem;
-    }
-
-    /* ====== SEÇÃO “SUGESTÕES DE PUBLICIDADE” ====== */
-    #sugestoes {
-      margin-top: 4rem;
-    }
-    #sugestoes h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    .sugestoes-list {
-      list-style: none;
-      padding-left: 1rem;
-      color: #DDD;
-      font-size: 1rem;
-      line-height: 1.4;
-    }
-    .sugestoes-list li {
-      margin-bottom: 0.75rem;
-      position: relative;
-      padding-left: 1.5rem;
-    }
-    .sugestoes-list li::before {
-      content: '▶';
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: #F1C40F;
-      font-size: 1rem;
     }
 
     /* ====== SEÇÃO “SOLICITE ATENDIMENTO” ====== */
@@ -313,14 +286,11 @@
         font-size: 1rem;
         padding: 0 1rem;
       }
-      .bullets {
-        grid-template-columns: 1fr;
+      .bullets li {
+        max-width: 100%;
       }
       .download-links {
         grid-template-columns: 1fr;
-      }
-      .sugestoes-list {
-        padding-left: 0.5rem;
       }
       .form-contato {
         padding: 1rem;
@@ -376,23 +346,6 @@
       </div>
     </section>
 
-    <!-- ====== SEÇÃO: SUGESTÕES DE PUBLICIDADE ====== -->
-    <section id="sugestoes">
-      <h2>🔖 Sugestões de Publicidade</h2>
-      <ul class="sugestoes-list">
-        <li>ACUSADO INJUSTAMENTE? PROCURE AJUDA JURÍDICA</li>
-        <li>FOI VÍTIMA DE DENÚNCIA FALSA? DEFENDA-SE!</li>
-        <li>RECEBEU MEDIDA PROTETIVA? SIGA AS REGRAS E PROTEJA-SE</li>
-        <li>PRISÃO PREVENTIVA INDEVIDA? VOCÊ TEM DIREITOS</li>
-        <li>DOCUMENTE TUDO: PROVAS SÃO SUA FORÇA</li>
-        <li>SEPARAÇÃO E GUARDA: CONVIVA COM SEUS FILHOS</li>
-        <li>ALIENAÇÃO PARENTAL É CRIME: SAIBA COMO AGIR</li>
-        <li>NÃO SE CALE DIANTE DA CALÚNIA</li>
-        <li>ORGANIZE PROVAS: MENSAGENS, ÁUDIOS E TESTEMUNHAS</li>
-        <li>FALTA DE PROVAS? EXIJA SEU CONTRADITÓRIO</li>
-      </ul>
-    </section>
-
     <!-- ====== SEÇÃO: SOLICITE ATENDIMENTO ====== -->
     <section id="contato">
       <h2>📨 Fale com o Dr. Diego Sanches</h2>
@@ -438,4 +391,3 @@
   </footer>
 </body>
 </html>
-
