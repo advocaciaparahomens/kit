@@ -134,9 +134,8 @@
       text-align: center;
     }
     .download-links {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
+      display: flex;
+      justify-content: center;
       margin-top: 1rem;
     }
     .download-block {
@@ -157,7 +156,6 @@
       padding: 0.75rem 1.5rem;
       font-weight: 700;
       border-radius: 6px;
-      margin-bottom: 0.75rem;
       transition: background-color 0.3s ease;
     }
     .download-block a.btn-download:hover {
@@ -261,8 +259,8 @@
       .bullets li {
         max-width: 100%;
       }
-      .download-links {
-        grid-template-columns: 1fr;
+      .download-block {
+        width: 100%;
       }
       .form-contato {
         padding: 1rem;
@@ -303,16 +301,10 @@
       <h2>📥 Baixe Gratuitamente Agora</h2>
       <div class="download-links">
         <div class="download-block">
-          <a href="docs/Kit_Completo_Defesa_Homens_Final.docx" class="btn-download" target="_blank">
-            📄 Baixar Guia Completo (.docx)
+          <a href="docs/Kit_Completo_Conteudo.zip" class="btn-download" target="_blank">
+            Clique aqui e baixe seu conteúdo
           </a>
-          <p class="subtexto">Todo o passo a passo em Word para editar e usar hoje mesmo.</p>
-        </div>
-        <div class="download-block">
-          <a href="docs/Kit_Revisado_Completo_Defesa_Homens_Final.pdf" class="btn-download" target="_blank">
-            📘 Baixar Versão em PDF
-          </a>
-          <p class="subtexto">Versão rápida para ler no celular ou imprimir.</p>
+          <p class="subtexto">Inclui todos os documentos em Word e PDF com orientações completas.</p>
         </div>
       </div>
     </section>
@@ -349,3 +341,4 @@
   </footer>
 </body>
 </html>
+
