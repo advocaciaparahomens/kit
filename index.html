@@ -46,7 +46,17 @@
     }
     header h1 {
       font-size: 2.5rem;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+    header .situacoes {
+      max-width: 700px;
+      margin-bottom: 1rem;
+    }
+    header .situacoes p {
+      font-size: 1rem;
+      color: #DDD;
+      line-height: 1.5;
+      margin-bottom: 1rem;
     }
     header p {
       font-size: 1.1rem;
@@ -326,6 +336,7 @@
     @media (max-width: 768px) {
       header h1 { font-size: 2rem; }
       header p { font-size: 1rem; }
+      .situacoes p { font-size: 0.9rem; }
       .bullets li { max-width: 100%; }
       .steps { flex-direction: column; }
       .step { max-width: 100%; }
@@ -345,6 +356,17 @@
   <!-- CABEÇALHO HERO -->
   <header>
     <h1>Homem, você foi acusado injustamente?</h1>
+    <!-- Novas situações -->
+    <div class="situacoes">
+      <p>
+        • Recebeu uma medida protetiva sem ter agredido ninguém?<br>
+        • Está sendo vítima de denúncia falsa e não sabe como se defender?<br>
+        • Correu risco de prisão preventiva sem provas concretas?<br>
+        • Perdeu o convívio com seus filhos por acusações infundadas?<br>
+        • Foi convocado para audiência e não entende prazos ou documentos?<br>
+        • Não sabe como reunir mensagens, áudios e fotos para provar sua inocência?
+      </p>
+    </div>
     <p>Recupere a convivência com seus filhos em até 24 h — sem complicação.</p>
     <a href="#downloads" class="btn-cta">Quero o Guia Grátis</a>
   </header>
@@ -451,4 +473,3 @@
   </footer>
 </body>
 </html>
-
