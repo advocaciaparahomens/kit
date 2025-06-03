@@ -4,44 +4,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kit de defesa gratuito para homens acusados injustamente: guia prático com passo a passo e suporte direto pelo WhatsApp." />
-  <meta property="og:title" content="Recebeu uma Medida Protetiva Sem Provas?" />
-  <meta property="og:description" content="Não fique afastado dos seus filhos. Baixe agora um guia prático com orientações do Dr. Diego Sanches, OAB/SP 326.175." />
+  <meta name="description" content="Guia prático para homens acusados injustamente: entenda medidas protetivas, reúna provas e recupere a convivência com seus filhos." />
+  <meta property="og:title" content="Homem, você foi acusado injustamente? Saiba como reverter em 24h." />
+  <meta property="og:description" content="Material gratuito feito para homens que enfrentam acusações falsas. Passo a passo para defesa imediata." />
   <meta property="og:image" content="img/og-image.png" />
   <meta property="og:url" content="https://advocaciaparahomens.github.io/kit/" />
-  <title>Recebeu uma Medida Protetiva Sem Provas? | Diego Sanches, OAB/SP 326.175</title>
+  <title>Homem, você foi acusado injustamente? | Guia de Defesa</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
 
   <style>
     /* RESET */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', sans-serif;
       background-color: #121212;
       color: #ECECEA;
       line-height: 1.6;
     }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    img {
-      max-width: 100%;
-      display: block;
-    }
-    h1, h2, h3 {
-      font-family: 'Montserrat', sans-serif;
-      color: #F1C40F;
-    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: #F1C40F; }
 
     /* CABEÇALHO HERO */
     header {
@@ -57,13 +42,14 @@
       align-items: center;
       text-align: center;
       color: #ECECEA;
+      padding: 0 1rem;
     }
     header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       max-width: 600px;
       margin-bottom: 1.5rem;
       color: #DDD;
@@ -88,7 +74,7 @@
       padding: 2rem 1rem;
     }
 
-    /* SEÇÃO: O QUE VOCÊ VAI ENCONTRAR */
+    /* SEÇÃO: O QUE ESTE GUIA TEM PARA VOCÊ */
     #beneficios {
       margin-top: 3rem;
     }
@@ -167,6 +153,49 @@
       margin-top: 0.5rem;
     }
 
+    /* DEPOIMENTO RÁPIDO */
+    .depoimento-rapida {
+      margin: 2rem auto;
+      max-width: 600px;
+      text-align: center;
+      color: #CCC;
+      font-style: italic;
+    }
+    .depoimento-rapida strong {
+      display: block;
+      margin-top: 0.5rem;
+      color: #DDD;
+    }
+
+    /* FAQ SIMPLES */
+    .faq {
+      max-width: 600px;
+      margin: 2rem auto;
+      color: #DDD;
+      font-size: 0.95rem;
+    }
+    .faq h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      color: #F1C40F;
+    }
+    .faq details {
+      background-color: #1E1E1E;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+      padding: 0.75rem 1rem;
+    }
+    .faq summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #ECECEA;
+    }
+    .faq p {
+      margin-top: 0.5rem;
+      color: #CCC;
+    }
+
     /* SEÇÃO: SOLICITE ATENDIMENTO */
     #contato {
       margin-top: 4rem;
@@ -180,11 +209,10 @@
       background-color: #1E1E1E;
       padding: 1.5rem;
       border-radius: 8px;
-      max-width: 600px;
+      max-width: 400px;
       margin: auto;
     }
-    .form-contato input,
-    .form-contato textarea {
+    .form-contato input {
       width: 100%;
       background-color: #2A2A2A;
       border: none;
@@ -194,8 +222,7 @@
       font-size: 1rem;
       color: #ECECEA;
     }
-    .form-contato input::placeholder,
-    .form-contato textarea::placeholder {
+    .form-contato input::placeholder {
       color: #999;
     }
     .form-contato button.btn-form {
@@ -250,19 +277,19 @@
     /* RESPONSIVIDADE */
     @media (max-width: 768px) {
       header h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
       header p {
         font-size: 1rem;
-        padding: 0 1rem;
       }
       .bullets li {
         max-width: 100%;
       }
-      .download-block {
-        width: 100%;
+      .faq details {
+        font-size: 0.9rem;
       }
       .form-contato {
+        width: 100%;
         padding: 1rem;
       }
       .whatsapp a.btn-wpp,
@@ -276,25 +303,29 @@
 <body>
   <!-- CABEÇALHO HERO -->
   <header>
-    <h1>Recebeu uma Medida Protetiva Sem Provas?</h1>
-    <p>Não fique afastado dos seus filhos injustamente. Baixe agora um guia prático para saber o que fazer em até 24h.</p>
-    <a href="https://api.whatsapp.com/send?phone=5511930510507&text=Olá,%20Dr.%20Diego%20Sanches,%20preciso%20de%20ajuda%20com%20meu%20caso" class="btn-cta" target="_blank">
-      Quero Me Defender Agora
-    </a>
+    <h1>Homem, você foi acusado injustamente?</h1>
+    <p>Saiba como reverter uma medida protetiva em 24h e voltar a conviver com seus filhos</p>
+    <a href="#downloads" class="btn-cta">Quero o Guia Grátis</a>
   </header>
 
   <main class="container">
-    <!-- SEÇÃO: O QUE VOCÊ VAI ENCONTRAR -->
+    <!-- SEÇÃO: O QUE ESTE GUIA TEM PARA VOCÊ -->
     <section id="beneficios">
-      <h2>O Que Este Guia Prático Tem Para Você</h2>
+      <h2>O Que Este Guia Tem Para Você, Homem de Verdade</h2>
       <ul class="bullets">
-        <li>Como ler e entender sua medida protetiva — passos para não errar</li>
-        <li>O que fazer assim que sair a intimação (sem perder prazo)</li>
-        <li>Como juntar provas (áudios, mensagens, fotos) sem complicação</li>
-        <li>Dicas para provar que seu filho precisa de você (guarda e convivência)</li>
-        <li>Contato direto com Dr. Diego Sanches pelo WhatsApp</li>
+        <li>Entenda sua medida protetiva e não seja pego de surpresa</li>
+        <li>Passo a passo para reunir provas (áudios, mensagens, fotos) sem complicação</li>
+        <li>Modelos prontos em linguagem simples — copie e cole</li>
+        <li>Como provar que seu filho precisa de você (guarda e convivência)</li>
+        <li>Contato direto pelo WhatsApp do Dr. Diego Sanches</li>
       </ul>
     </section>
+
+    <!-- SEÇÃO: DEPOIMENTO -->
+    <div class="depoimento-rapida">
+      “Em 48 horas, consegui reverter a medida e voltar a ver meus filhos. Este guia salvou meu dia.”  
+      <strong>– André, São Paulo/SP</strong>
+    </div>
 
     <!-- SEÇÃO: BAIXE OS MATERIAIS -->
     <section id="downloads">
@@ -304,28 +335,47 @@
           <a href="docs/arquivos.zip" class="btn-download" target="_blank">
             Clique aqui e baixe seu conteúdo
           </a>
-          <p class="subtexto">Inclui todos os documentos em Word e PDF com orientações completas.</p>
+          <p class="subtexto">Inclui Word e PDF com tudo o que você precisa para se defender.</p>
         </div>
       </div>
     </section>
 
+    <!-- SEÇÃO: FAQ -->
+    <div class="faq">
+      <h3>Perguntas Frequentes</h3>
+      <details>
+        <summary>Posso usar este guia sem advogado?</summary>
+        <p>Este material dá orientação imediata, mas não substitui o acompanhamento jurídico personalizado.</p>
+      </details>
+      <details>
+        <summary>Quanto tempo levo para reunir as provas?</summary>
+        <p>Seguindo as instruções, você pode reunir fotos e mensagens em até 48h.</p>
+      </details>
+      <details>
+        <summary>O guia funciona em todo o Brasil?</summary>
+        <p>Sim. A Lei Maria da Penha é federal, então as etapas valem em qualquer estado.</p>
+      </details>
+      <details>
+        <summary>O que acontece se eu descumprir a medida?</summary>
+        <p>O descumprimento pode gerar prisão preventiva. O guia ensina a evitar isso.</p>
+      </details>
+    </div>
+
     <!-- SEÇÃO: SOLICITE ATENDIMENTO -->
     <section id="contato">
-      <h2>📨 Fale com o Dr. Diego Sanches</h2>
-      <p>Preencha o formulário e receba orientação gratuita em até 24h:</p>
-      <form action="mailto:diego@diegosanches.adv.br" method="POST" enctype="text/plain" class="form-contato">
-        <input type="text" name="Nome" placeholder="Seu nome completo" required />
-        <input type="email" name="Email" placeholder="Seu e-mail" required />
-        <input type="tel" name="WhatsApp" placeholder="Seu WhatsApp (com DDD)" required />
-        <textarea name="Mensagem" rows="4" placeholder="Descreva rapidamente seu problema" required></textarea>
-        <button type="submit" class="btn-form">Enviar Mensagem</button>
+      <h2>📨 Entre em Contato</h2>
+      <p>Preencha apenas seu primeiro nome e WhatsApp para receber orientações gratuitas em até 24h:</p>
+      <form action="https://api.whatsapp.com/send?phone=5511930510507&text=" method="GET" class="form-contato">
+        <input type="text" name="nome" placeholder="Seu primeiro nome" required />
+        <input type="tel" name="phone" placeholder="WhatsApp com DDD" required />
+        <button type="submit" class="btn-form">Enviar para meu WhatsApp</button>
       </form>
     </section>
 
     <!-- SEÇÃO: ATENDIMENTO IMEDIATO -->
     <section id="whatsapp">
-      <h2>📲 Atendimento Imediato no WhatsApp</h2>
-      <p>Precisa de resposta agora? Clique abaixo e fale direto com o Dr. Diego:</p>
+      <h2>📲 Atendimento Imediato</h2>
+      <p>Precisa falar agora? Clique abaixo e envie uma mensagem direta:</p>
       <div class="whatsapp">
         <a href="https://api.whatsapp.com/send?phone=5511930510507&text=Olá,%20Dr.%20Diego%20Sanches,%20preciso%20de%20ajuda%20com%20meu%20caso" class="btn-wpp" target="_blank">
           💬 Chamar no WhatsApp
