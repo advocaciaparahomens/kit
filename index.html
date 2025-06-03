@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Guia prático para homens acusados injustamente: entenda medidas protetivas, reúna provas e recupere a convivência com seus filhos." />
-  <meta property="og:title" content="Homem, você foi acusado injustamente? Recorra e volte a ver seus filhos em 24 h." />
-  <meta property="og:description" content="Material gratuito feito para homens que enfrentam acusações falsas. Passo a passo para defesa imediata." />
+  <meta property="og:title" content="Homem, você foi acusado injustamente? Recorra em 24 h ao nosso WhatsApp." />
+  <meta property="og:description" content="Envie seu WhatsApp e receba o guia gratuito feito para homens que enfrentam acusações falsas." />
   <meta property="og:image" content="img/og-image.png" />
-  <meta property="og:url" content="https://advocaciaparahomens.github.io/kit/index-1.html" />
-  <title>Homem, você foi acusado injustamente? | Guia de Defesa</title>
+  <meta property="og:url" content="https://advocaciaparahomens.github.io/kit/index-2.html" />
+  <title>Homem, acuse injustiça? | Envie seu WhatsApp</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
@@ -28,11 +28,11 @@
     img { max-width: 100%; display: block; }
     h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: #F1C40F; }
 
-    /* CABEÇALHO HERO */
+    /* CABEÇALHO HERO COM FORMULÁRIO */
     header {
       position: relative;
-      height: 60vh;
-      min-height: 400px;
+      height: 70vh;
+      min-height: 450px;
       background:
         linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
         url('img/hero-lawyer.jpg') center/cover no-repeat;
@@ -46,24 +46,49 @@
     }
     header h1 {
       font-size: 2.5rem;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
     }
     header p {
       font-size: 1.1rem;
       max-width: 600px;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       color: #DDD;
     }
-    header .btn-cta {
+    /* Formulário dentro do hero */
+    .hero-form {
+      background-color: rgba(30, 30, 30, 0.85);
+      padding: 1.5rem;
+      border-radius: 8px;
+      max-width: 360px;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    .hero-form input {
+      width: 100%;
+      background-color: #2A2A2A;
+      border: none;
+      border-radius: 6px;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: #ECECEA;
+    }
+    .hero-form input::placeholder {
+      color: #999;
+    }
+    .hero-form button {
+      width: 100%;
       background-color: #F1C40F;
       color: #121212;
-      padding: 0.75rem 1.5rem;
+      padding: 0.75rem;
       font-size: 1rem;
       font-weight: 700;
+      border: none;
       border-radius: 6px;
+      cursor: pointer;
       transition: background-color 0.3s ease;
     }
-    header .btn-cta:hover {
+    .hero-form button:hover {
       background-color: #D4AC0D;
     }
 
@@ -110,21 +135,28 @@
       font-size: 1.2rem;
     }
 
-    /* DEPOIMENTO ÚNICO */
-    .depoimento-rapida {
+    /* DEPOIMENTOS MÚLTIPLOS */
+    .depoimentos {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
       margin: 2rem auto;
-      max-width: 600px;
-      text-align: center;
+      max-width: 700px;
+    }
+    .depoimento {
+      background-color: #1E1E1E;
+      padding: 1rem;
+      border-radius: 8px;
       color: #CCC;
       font-style: italic;
     }
-    .depoimento-rapida strong {
+    .depoimento strong {
       display: block;
       margin-top: 0.5rem;
       color: #DDD;
     }
 
-    /* SEÇÃO: BAIXE OS MATERIAIS */
+    /* SEÇÃO: BAIXE OS MATERIAIS (APÓS FORMULÁRIO) */
     #downloads {
       margin-top: 4rem;
     }
@@ -196,51 +228,6 @@
       color: #CCC;
     }
 
-    /* SEÇÃO: SOLICITE ATENDIMENTO */
-    #contato {
-      margin-top: 4rem;
-    }
-    #contato h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    .form-contato {
-      background-color: #1E1E1E;
-      padding: 1.5rem;
-      border-radius: 8px;
-      max-width: 400px;
-      margin: auto;
-    }
-    .form-contato input {
-      width: 100%;
-      background-color: #2A2A2A;
-      border: none;
-      border-radius: 6px;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      font-size: 1rem;
-      color: #ECECEA;
-    }
-    .form-contato input::placeholder {
-      color: #999;
-    }
-    .form-contato button.btn-form {
-      width: 100%;
-      background-color: #F1C40F;
-      color: #121212;
-      padding: 0.75rem;
-      font-size: 1rem;
-      font-weight: 700;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .form-contato button.btn-form:hover {
-      background-color: #D4AC0D;
-    }
-
     /* SEÇÃO: ATENDIMENTO IMEDIATO */
     #whatsapp {
       margin-top: 4rem;
@@ -278,14 +265,11 @@
     @media (max-width: 768px) {
       header h1 { font-size: 2rem; }
       header p { font-size: 1rem; }
+      .hero-form { width: 100%; }
       .bullets li { max-width: 100%; }
+      .depoimentos { gap: 1rem; }
       .faq details { font-size: 0.9rem; }
-      .form-contato {
-        width: 100%;
-        padding: 1rem;
-      }
       .whatsapp a.btn-wpp,
-      .form-contato button.btn-form,
       .btn-download {
         width: 100%;
       }
@@ -293,11 +277,18 @@
   </style>
 </head>
 <body>
-  <!-- CABEÇALHO HERO -->
+  <!-- CABEÇALHO HERO COM FORMULÁRIO -->
   <header>
     <h1>Homem, você foi acusado injustamente?</h1>
-    <p>Recupere a convivência com seus filhos em até 24 h — sem complicação.</p>
-    <a href="#downloads" class="btn-cta">Quero o Guia Grátis</a>
+    <p>Reverta a medida protetiva em 24 h — envie seu WhatsApp e receba o guia completo.</p>
+
+    <form class="hero-form" action="https://api.whatsapp.com/send" method="GET">
+      <input type="hidden" name="phone" value="5511930510507" />
+      <input type="text" name="text" value="Homem:%20[SEU_NOME]%20-%20preciso%20do%20guia%20contra%20medida%20protetiva" style="display:none;" />
+      <input type="text" name="nome" placeholder="Seu primeiro nome" required />
+      <input type="tel" name="telefone" placeholder="WhatsApp com DDD" required />
+      <button type="submit">Enviar para meu WhatsApp</button>
+    </form>
   </header>
 
   <main class="container">
@@ -313,13 +304,19 @@
       </ul>
     </section>
 
-    <!-- SEÇÃO: DEPOIMENTO ÚNICO -->
-    <div class="depoimento-rapida">
-      “Em 48 horas, consegui reverter a medida e voltar a ver meus filhos. Este guia salvou meu dia.”  
-      <strong>– André, São Paulo/SP</strong>
+    <!-- SEÇÃO: DEPOIMENTOS MÚLTIPLOS -->
+    <div class="depoimentos">
+      <div class="depoimento">
+        “Em 48 h, consegui reverter a medida e voltar a ver meus filhos.”  
+        <strong>– André, São Paulo/SP</strong>
+      </div>
+      <div class="depoimento">
+        “Eu não sabia onde recorrer. Com este guia, em 3 dias ganhei minha audiência.”  
+        <strong>– Rafael, Belo Horizonte/MG</strong>
+      </div>
     </div>
 
-    <!-- SEÇÃO: BAIXE OS MATERIAIS -->
+    <!-- SEÇÃO: BAIXE OS MATERIAIS (APÓS FORMULÁRIO) -->
     <section id="downloads">
       <h2>📥 Baixe Gratuitamente Agora</h2>
       <div class="download-links">
@@ -352,17 +349,6 @@
         <p>O descumprimento pode gerar prisão preventiva. O guia ensina a evitar isso.</p>
       </details>
     </div>
-
-    <!-- SEÇÃO: SOLICITE ATENDIMENTO -->
-    <section id="contato">
-      <h2>📨 Entre em Contato</h2>
-      <p>Preencha apenas seu primeiro nome e WhatsApp para receber orientações gratuitas em até 24 h:</p>
-      <form action="https://api.whatsapp.com/send?phone=5511930510507&text=Olá%2C%20Dr.%20Diego%20Sanches%2C%20sou%20[SEU_NOME]%2C%20preciso%20de%20ajuda%20com%20uma%20medida%20protetiva." method="GET" class="form-contato">
-        <input type="text" name="nome" placeholder="Seu primeiro nome" required />
-        <input type="tel" name="phone" placeholder="WhatsApp com DDD" required />
-        <button type="submit" class="btn-form">Enviar para meu WhatsApp</button>
-      </form>
-    </section>
 
     <!-- SEÇÃO: ATENDIMENTO IMEDIATO -->
     <section id="whatsapp">
